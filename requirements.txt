@@ -7,7 +7,8 @@ mistralai         # Environment variable management (API Keys)
 # --- Data Extraction (Text & Images) ---
 PyMuPDF>=1.23.0         # Fast PDF text and image extraction 
 unstructured[pdf]       # Handles complex document partitioning and tables [cite: 25, 36]
-pillow                  # Image processing and resizing for the final DDR [cite: 52]
+pillow    
+             # Image processing and resizing for the final DDR [cite: 52]
 
 # --- Report Generation ---
 python-docx             # To generate the final structured Word/Client-ready report [cite: 40, 53]
@@ -16,4 +17,7 @@ pandas                  # For data structuring and deduplication [cite: 38]
 
 # --- Utilities ---
 requests                # For any external API calls or image handling
-pydantic                
+pydantic  
+
+#optional progress bar for long-running tasks
+tqdm

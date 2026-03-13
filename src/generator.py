@@ -36,3 +36,4 @@ class DDRGenerator:
         
         self.doc.save(self.output_path)
         print(f"✅ Report saved to {self.output_path}")
+        
