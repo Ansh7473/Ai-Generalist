@@ -1,3 +1,4 @@
+
 from docx import Document
 from docx.shared import Inches
 import os
@@ -36,4 +37,3 @@ class DDRGenerator:
         
         self.doc.save(self.output_path)
         print(f"✅ Report saved to {self.output_path}")
-        

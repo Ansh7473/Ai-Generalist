@@ -1,5 +1,7 @@
-import fitz  # PyMuPDF
-import os
+
+#core logic mine rest code is enhanced throught AI
+import os    # <--- ADD THIS LINE
+import fitz
 from tqdm import tqdm
 
 class DataExtractor:
@@ -41,5 +43,4 @@ class DataExtractor:
         
         return {
             "inspection": results["insp"],
-            "thermal": results["thermal"]
-        }
+            "thermal": results["thermal"] }
