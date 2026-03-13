@@ -19,4 +19,5 @@
 1. Clone the repository: `git clone https://github.com/Ansh7473/Ai-Generalist`
 2. Install dependencies: `pip install -r requirements.txt`
 3. Configure Environment: Create a `.env` file based on `.env.example` and add your `MISTRAL_API_KEY`.
-4. Run the generator: `python src/main.py`
+4. Run the generator: `python src/main.py` 
+
