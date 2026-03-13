@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# Data (Don't push large sample PDFs if they are private)
+data/raw/*
+data/processed/*
+
+# OS generated files
+.DS_Store

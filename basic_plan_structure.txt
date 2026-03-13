@@ -1,8 +1,4 @@
 
-
-
-
-
 Project Plan: AI-Powered DDR Generation System
 1. Objective
 
