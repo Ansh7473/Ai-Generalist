@@ -1,5 +1,4 @@
-
-#core logic mine rest code is enhanced throught AI
+# core logic mine rest code is enhanced through AI
 import os
 from dotenv import load_dotenv
 
@@ -7,7 +6,7 @@ load_dotenv()
 
 class DDRProcessor:
     def __init__(self):
-        # All API keys mapped from your .env
+        # All API keys mapped from your .env or Streamlit Secrets
         self.keys = {
             "Mistral": os.getenv("MISTRAL_API_KEY"),
             "Claude": os.getenv("ANTHROPIC_API_KEY"),
@@ -20,14 +19,30 @@ class DDRProcessor:
         }
 
     def analyze_data(self, inspection_text, thermal_text, model_choice="Mistral"):
-        # The central 'Rulebook' for the report
+        """
+        Synthesizes site inspection and thermal data into a professional DDR.
+        Uses industry-standard logic (Source-Path-Effect) as per UrbanRoof benchmarks.
+        """
         system_instruction = (
-            "You are a professional building diagnostic expert. "
-            "Merge Site Inspection data with Thermal Imaging data into a 7-section DDR: "
-            "1. Property Issue Summary, 2. Area-wise Observations, 3. Root Cause Analysis, "
-            "4. Severity Assessment, 5. Recommended Actions, 6. Limitations, 7. Disclaimer. "
-            "Rules: Use simple language. Write 'Not Available' for missing data. Provide Severity reasoning."
+            "You are a Building Diagnostic Expert. Generate a 7-section Detailed Diagnostic Report (DDR) "
+            "by synthesizing Site Inspection and Thermal data.\n\n"
+            "CORE LOGIC RULES:\n"
+            "1. SOURCE-PATH-EFFECT LINKING: Link the 'Positive Side' (cause, e.g., tile gaps) to the "
+            "'Negative Side' (symptom, e.g., dampness) using mechanisms like 'capillary action'.\n"
+            "2. DE-DUPLICATION: Merge identical issues found across different pages into one area-wise observation.\n"
+            "3. CONFLICT HANDLING: If Thermal data shows a cold spot but Visual data is clear, flag it as 'Requires Investigation'.\n"
+            "4. NO HALLUCINATION: If a detail is missing, write 'Not Available'. Never invent facts.\n"
+            "5. CLIENT-FRIENDLY TONE: Use professional terminology like 'Therapies' for repairs.\n\n"
+            "STRUCTURE:\n"
+            "### 1. Property Issue Summary (Executive overview)\n"
+            "### 2. Area-wise Observations (Breakdown of Bathroom, Balcony, Terrace, External Walls)\n"
+            "### 3. Probable Root Cause (Technical 'Why' behind the leakages)\n"
+            "### 4. Severity Assessment (Good/Moderate/Poor with reasoning on structural stress)\n"
+            "### 5. Recommended Actions (Detailed 'Therapies' using materials like Dr. Fixit URP/LW+)\n"
+            "### 6. Additional Notes (Limitations regarding hidden defects)\n"
+            "### 7. Missing or Unclear Information (Explicitly mark as 'Not Available')"
         )
+        
         user_content = f"INSPECTION DATA:\n{inspection_text}\n\nTHERMAL DATA:\n{thermal_text}"
 
         try:
