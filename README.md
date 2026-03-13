@@ -1,0 +1,2 @@
+# Ai-Generalist
+Assignments
