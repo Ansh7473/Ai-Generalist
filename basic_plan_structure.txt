@@ -1,0 +1,40 @@
+
+
+
+
+
+Project Plan: AI-Powered DDR Generation System
+1. Objective
+
+Build an AI workflow that extracts, merges, and structures site inspection and thermal data into a professional Detailed Diagnostic Report (DDR).
+
+
+2. System Architecture & Workflow
+
+
+Build an AI workflow that extracts, merges, and structures site inspection and thermal data into a professional Detailed Diagnostic Report (DDR).
+
+
+Stage 1: Data Extraction (Multimodal)
+
+
+Stage 2: Data Merging & Reasoning
+
+
+Stage 3: Report Generation (Structuring)
+
+
+Stage 4: Refinement & Validation
+
+
+
+3.Implementation Requirements
+
+
+Tools: ( Python, LangChain/LlamaIndex, OpenAI/Anthropic API, PDF extraction library like PyMuPDF or Unstructured.io)
+
+4. Final Deliverables (Submission Checklist)
+
+[ ] Project Repository/Live Link: Working output of the generated DDR
+[ ] Google Drive Folder: Containing all screenshots and documents, shared via a single link
+[ ] 3-5 Minute Loom Video: Explaining the build, logic, limitations, and future improvements.
