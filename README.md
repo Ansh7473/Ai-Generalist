@@ -1,4 +1,4 @@
-# AI-Powered DDR Generation System (Mistral AI + claude)
+# AI-Powered DDR Generation System (Mistral AI + claude +different models)
 
 ## 📌 Project Objective
 [cite_start]This system automates the conversion of raw site inspection and thermal data into a structured, client-ready **Detailed Diagnostic Report (DDR)**
@@ -20,6 +20,7 @@
 2. Install dependencies: `pip install -r requirements.txt`
 3. Configure Environment: Create a `.env` file based on `.env.example` and add your `MISTRAL_API_KEY`.
 4. Run the generator: `python src/main.py` 
+
 
 
 
