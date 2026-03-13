@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> a2bcebcf262478ab588a9651fa0d588096508222
 Project Plan: AI-Powered DDR Generation System
 1. Objective
 
