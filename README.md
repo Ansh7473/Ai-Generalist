@@ -1,7 +1,7 @@
 # AI-Powered DDR Generation System (Mistral AI + claude +different models)
 
 ## 📌 Project Objective
-[cite_start]This system automates the conversion of raw site inspection and thermal data into a structured, client-ready **Detailed Diagnostic Report (DDR)**
+This system automates the conversion of raw site inspection and thermal data into a structured, client-ready **Detailed Diagnostic Report (DDR)**
 
 ## 🛠️ Tech Stack
 - **LLM:** Mistral AI (Reasoning, Deduplication, and Synthesis) + claude 
